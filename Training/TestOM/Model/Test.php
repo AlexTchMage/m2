@@ -34,7 +34,7 @@ class Test
 		echo '<br>';
 		print_r($this->arrayList);
 		echo '<br>';
-		$newManager = $this->manager->create();
+		$newManager = $this->managerFactory->create();
 		print_r('test: '.get_class($newManager));
 		echo '<br>';
 	}
