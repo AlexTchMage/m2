@@ -30,6 +30,6 @@ class Test
 		print_r($this->number); 
 		echo '<br>';
 		print_r($this->arrayList);
-		echo '<br>';
+		
 	}
 }
