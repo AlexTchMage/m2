@@ -6,9 +6,24 @@
 	<type name="Magento\Framework\View\Element\Template">
 		<plugin name="training_test2" type="Training\Test\Plugin\Block\Template" />
 	</type>
+	
+	<!-- FOR TASK 2.2 -->
+	<!-- <preference for="Magento\Framework\App\FrontControllerInterface" type="Training\Test\App\FrontController" /> -->
 
 	<!-- Commented Plugin from the Task 1.9 to proceed with the task 1.10 -->
 <!-- 	<type name="Magento\Catalog\Controller\Product\View">
 		<plugin name="training_test3" type="Training\Test\Plugin\Controller\Product\View" />
 	</type> -->
+
+	<!-- FOR TASK 2.3 -->
+	<type name = "Magento\Framework\App\Router\NoRouteHandlerList">
+	 <arguments>
+		 <argument name = "handlerClassesList" xsi:type = "array">
+			<item name = "default" xsi:type = "array">
+			 	<item name = "class" xsi:type = "string">Training\Test\Controller\NoRouteHandler</item>
+			 	<item name = "sortOrder" xsi:type = "string">100</item>
+		 	</item>
+		 </argument>
+	 </arguments>
+	</type>
 </config>
